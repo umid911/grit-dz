@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.grid{
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    max-width: 992px;
+    margin: 50px  auto;
+
+
+}
+.item{
+    min-height: 80px;
+    background: red;
+}
+.item:nth-of-type(1){
+    grid-column: span 4;
+    grid-row: span 2;
+}
+.item:nth-of-type(2){
+    grid-column: span 2;
+    grid-row: span 2;
+}
